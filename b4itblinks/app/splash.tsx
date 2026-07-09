@@ -15,11 +15,6 @@ export default function SplashScreen(): React.JSX.Element {
 
   return (
     <View className="flex-1 items-center justify-center bg-slate-900 px-8">
-      {/* 
-        CRITICAL FIXES applied below:
-        1. Source route corrected to target "../../assets/images/splash-icon.png" to safely escape folder bounds.
-        2. style prop added alongside className to ensure layout renders correctly on all platforms.
-      */}
       <Image
         source={require("../assets/images/splash-icon.png")}
         className="w-32 h-32"
